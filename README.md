@@ -1,6 +1,6 @@
-#  Instagram – Full Stack Social Media Application
+#  InstaClone – Full Stack Social Media Application
 
-Instagram is a full-stack web application inspired by Instagram.  
+Instaclone is a full-stack web application inspired by Instagram.  
 It allows users to register, log in, create posts, like posts, follow users, and view a personalized feed.
 
 This project is built using **Spring Boot (Backend)** and **React (Frontend)** to demonstrate real-world full-stack development skills.
@@ -10,7 +10,7 @@ This project is built using **Spring Boot (Backend)** and **React (Frontend)** t
 ##  Tech Stack
 
 ### Backend
-- Java 21
+- Java 17
 - Spring Boot
 - Spring Data JPA
 - Spring Security (JWT Authentication)
@@ -48,24 +48,25 @@ This project is built using **Spring Boot (Backend)** and **React (Frontend)** t
 
 ##  Project Structure
 
-### Backend (`instgram`)
+### Backend (`instaclone`)
 src/main/java/com/social/instagram
 │
 ├── controller
 ├── model
 ├── repository
 ├── service
-├── config
+├── seurity
 ├── util
-├── dto
 └── InstagramApplication.java
 
 
-### Frontend (`instagram-frontend`)
+### Frontend (`instaclone-frontend`)
 src
 ├── api
 ├── components
+├── context
 ├── pages
+├── utils
 ├── App.js
 └── index.js
 
@@ -77,12 +78,12 @@ src
 
 ##  Database Configuration
 Create MySQL database: sql
-CREATE DATABASE instagrm_db;
+CREATE DATABASE instaclone_db;
 
 -
 ## Update application.yaml:
 
-spring.datasource.url=jdbc:mysql://localhost:3306/instagram_db
+spring.datasource.url=jdbc:mysql://localhost:3306/instaclone_db
 spring.datasource.username=root
 spring.datasource.password=YOUR_PASSWORD
 
