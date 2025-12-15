@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchFeed } from "../api/postApi";
 import PostCard from "../components/PostCard";
 import Navbar from "../components/Navbar";
+import "./Feed.css";
 
 function Feed() {
   const [posts, setPosts] = useState([]);

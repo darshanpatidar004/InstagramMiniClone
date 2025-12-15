@@ -1,7 +1,7 @@
 import { likePost, unlikePost } from "../api/postApi";
 import CommentBox from "./CommentBox";
 import { useState } from "react";
-
+import "./Post.css";
 function PostCard({ post }) {
   const [liked, setLiked] = useState(false);
 

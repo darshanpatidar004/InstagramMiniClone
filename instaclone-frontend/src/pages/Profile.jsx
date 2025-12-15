@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getUserProfile, followUser, unfollowUser } from "../api/userApi";
 import Navbar from "../components/Navbar";
-
+import "./Profile.css";
 function Profile() {
   const { id } = useParams();
   const [user, setUser] = useState(null);
